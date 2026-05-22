@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Car Key Replacement Jacksonville Beach – Mobile car key service. Lost keys, smart key programming, key fobs, ignition repair. Call 904-938-1221." />
+  <title>Car Key Replacement Jacksonville Beach | Mobile Key Service</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --navy: #11141c;
+      --navy-mid: #1d222f;
+      --navy-light: #2a3144;
+      --gold: #e06a1b;
+      --gold-light: #f59523;
+      --sand: #f3f5f8;
+      --sand-mid: #e2e6ed;
+      --white: #ffffff;
+      --text-dark: #151b27;
+      --text-mid: #4c556b;
+      --text-soft: #7a8397;
+      --border: #d8dee8;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 12px rgba(17,20,28,0.08);
+      --shadow-md: 0 8px 32px rgba(17,20,28,0.13);
+      --shadow-lg: 0 20px 60px rgba(17,20,28,0.18);
+      --transition: 0.28s cubic-bezier(0.4,0,0.2,1);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== SKIP LINK ===== */
+    .skip-link {
+      position: absolute; top: -40px; left: 0; background: var(--gold);
+      color: var(--navy); padding: 8px 16px; z-index: 9999; font-weight: 600;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ===== NAVBAR ===== */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition);
+    }
+    #navbar.scrolled { box-shadow: var(--shadow-md); }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 72px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 4px;
+    }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a, .nav-links > li > button {
+      display: flex; align-items: center; gap: 4px;
+      padding: 8px 14px; border-radius: 8px;
+      font-size: 0.9rem; font-weight: 500;
+      color: var(--text-mid);
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font-body);
+      transition: color var(--transition), background var(--transition);
+    }
+    .nav-links > li > a:hover,
+    .nav-links > li > button:hover { color: var(--navy); background: var(--sand); }
+    .nav-links > li > a.active { color: var(--navy); font-weight: 600; }
+    .dropdown-icon { font-size: 0.65rem; transition: transform var(--transition); }
+    .nav-links > li.open .dropdown-icon { transform: rotate(180deg); }
+
+    /* Dropdown */
+    .dropdown {
+      position: absolute; top: calc(100% + 8px); left: 0;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow-md);
+      min-width: 240px; padding: 8px;
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+    }
+    .nav-links > li.open .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .dropdown a {
+      display: block; padding: 10px 14px; border-radius: 8px;
+      font-size: 0.88rem; font-weight: 400; color: var(--text-mid);
+      transition: background var(--transition), color var(--transition);
+    }
+    .dropdown a:hover { background: var(--sand); color: var(--navy); }
+
+    /* Nav CTA */
+    .nav-cta {
+      background: var(--navy) !important; color: var(--white) !important;
+      padding: 9px 20px !important; border-radius: 8px !important;
+      font-weight: 600 !important; font-size: 0.88rem !important;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition) !important;
+    }
+    .nav-cta:hover {
+      background: var(--navy-light) !important;
+      box-shadow: 0 4px 16px rgba(15,34,68,0.25) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; padding: 8px;
+      background: none; border: none; cursor: pointer;
+      border-radius: 8px; transition: background var(--transition);
+    }
+    .hamburger:hover { background: var(--sand); }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--navy); border-radius: 2px;
+      transition: transform var(--transition), opacity var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav */
+    .mobile-nav {
+      display: none; position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+      background: var(--white); z-index: 999;
+      overflow-y: auto; padding: 20px 24px 40px;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    .mobile-nav.open { transform: translateX(0); }
+    .mobile-nav a, .mobile-nav button {
+      display: block; width: 100%;
+      padding: 14px 0; font-size: 1.05rem; font-weight: 500;
+      color: var(--text-dark); background: none; border: none;
+      border-bottom: 1px solid var(--border); text-align: left;
+      font-family: var(--font-body); cursor: pointer;
+    }
+    .mobile-nav .mobile-sub a {
+      padding: 10px 0 10px 20px; font-size: 0.95rem; color: var(--text-soft);
+      border-bottom: 1px solid transparent;
+    }
+    .mobile-nav .mobile-cta {
+      margin-top: 20px;
+      background: var(--navy) !important; color: var(--white) !important;
+      text-align: center !important; border-radius: 10px !important;
+      padding: 16px !important; border-bottom: none !important;
+      font-weight: 600 !important;
+    }
+
+    /* ===== FLOATING CTA ===== */
+    .float-cta {
+      position: fixed; bottom: 28px; right: 28px; z-index: 998;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+    }
+    .float-cta a {
+      display: flex; align-items: center; gap: 10px;
+      padding: 14px 22px; border-radius: 50px;
+      font-weight: 600; font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .float-cta a:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .float-cta .fcta-call {
+      background: var(--gold); color: var(--navy);
+    }
+    .float-icon { font-size: 1.1rem; }
+
+    /* ===== HERO ===== */
+    #home {
+      min-height: 100vh; position: relative;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 55%, var(--navy-light) 100%);
+      display: flex; align-items: center; overflow: hidden;
+      padding-top: 72px;
+    }
+    .hero-bg-pattern {
+      position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+    }
+    .hero-bg-pattern::before {
+      content: '';
+      position: absolute; top: -20%; right: -10%; width: 70%; height: 140%;
+      background: radial-gradient(ellipse at center, rgba(224,106,27,0.12) 0%, transparent 70%);
+    }
+    .hero-wave {
+      position: absolute; bottom: -2px; left: 0; right: 0;
+    }
+    .hero-wave svg { width: 100%; height: 80px; display: block; }
+    .hero-content {
+      max-width: 1200px; margin: 0 auto; padding: 80px 24px 120px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    }
+    .hero-text { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(224,106,27,0.15); border: 1px solid rgba(224,106,27,0.35);
+      border-radius: 50px; padding: 6px 16px; margin-bottom: 24px;
+      font-size: 0.8rem; font-weight: 600; color: var(--gold-light);
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-light); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.5;transform:scale(1.4);} }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      color: var(--white); line-height: 1.15; font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .hero-title .accent { color: var(--gold-light); display: block; }
+    .hero-desc {
+      font-size: 1.05rem; color: rgba(255,255,255,0.78);
+      max-width: 480px; margin-bottom: 36px; line-height: 1.75;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: var(--navy);
+      padding: 14px 28px; border-radius: 10px;
+      font-weight: 700; font-size: 0.95rem;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-primary:hover {
+      background: var(--gold-light); transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(224,106,27,0.4);
+    }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid rgba(255,255,255,0.4); color: var(--white);
+      padding: 13px 28px; border-radius: 10px;
+      font-weight: 600; font-size: 0.95rem;
+      transition: border-color var(--transition), background var(--transition), transform var(--transition);
+    }
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+    .hero-cards { position: relative; z-index: 1; }
+    .hero-cards-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    }
+    .hcard {
+      background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius); padding: 20px 18px;
+      backdrop-filter: blur(8px);
+      transition: background var(--transition), transform var(--transition);
+    }
+    .hcard:hover { background: rgba(255,255,255,0.14); transform: translateY(-3px); }
+    .hcard .hc-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .hcard .hc-title { font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .hcard .hc-text { font-size: 0.78rem; color: rgba(255,255,255,0.62); line-height: 1.5; }
+
+    /* ===== SECTIONS COMMON ===== */
+    section { scroll-margin-top: 72px; }
+    .section-header { text-align: center; max-width: 680px; margin: 0 auto 56px; }
+    .section-label {
+      display: inline-block; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--navy); line-height: 1.2; margin-bottom: 16px;
+    }
+    .section-desc { font-size: 1rem; color: var(--text-soft); line-height: 1.75; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section-pad { padding: 96px 0; }
+    .section-pad-sm { padding: 72px 0; }
+    .bg-sand { background: var(--sand); }
+    .bg-navy { background: var(--navy); }
+
+    /* ===== SERVICES ===== */
+    #services { background: var(--sand); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 32px 28px; border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex; flex-direction: column;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .sc-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 20px;
+    }
+    .sc-title {
+      font-family: var(--font-display); font-size: 1.15rem;
+      color: var(--navy); font-weight: 700; margin-bottom: 10px;
+    }
+    .sc-desc { font-size: 0.9rem; color: var(--text-soft); line-height: 1.7; margin-bottom: 20px; flex: 1; }
+    .sc-list { margin-top: auto; }
+    .sc-list li {
+      font-size: 0.85rem; color: var(--text-mid); padding: 5px 0;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .sc-list li::before {
+      content: '✓'; color: var(--gold); font-weight: 700;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .sc-link {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 20px;
+      font-size: 0.88rem; font-weight: 600; color: var(--navy-light);
+      transition: gap var(--transition), color var(--transition);
+    }
+    .sc-link:hover { gap: 10px; color: var(--gold); }
+
+    /* ===== SERVICE DETAIL SECTIONS ===== */
+    .service-detail {
+      padding: 80px 0; border-top: 1px solid var(--border);
+    }
+    .service-detail:nth-child(even) { background: var(--sand); }
+    .detail-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+    }
+    .detail-grid.reverse { direction: rtl; }
+    .detail-grid.reverse > * { direction: ltr; }
+    .detail-content {}
+    .detail-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block;
+    }
+    .detail-title {
+      font-family: var(--font-display); font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+      color: var(--navy); line-height: 1.25; margin-bottom: 16px;
+    }
+    .detail-desc { font-size: 0.95rem; color: var(--text-soft); line-height: 1.8; margin-bottom: 24px; }
+    .detail-list { display: flex; flex-direction: column; gap: 8px; }
+    .detail-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.9rem; color: var(--text-mid); line-height: 1.6;
+    }
+    .detail-list li .dl-icon {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      color: var(--white); display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; flex-shrink: 0; margin-top: 2px;
+    }
+    .detail-visual {
+      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+      border-radius: var(--radius-lg); padding: 36px;
+      color: var(--white); position: relative; overflow: hidden;
+    }
+    .detail-visual::before {
+      content: ''; position: absolute; bottom: -30px; right: -30px;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: rgba(201,153,58,0.1);
+    }
+    .dv-emoji { font-size: 3.5rem; margin-bottom: 20px; display: block; }
+    .dv-title { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 12px; }
+    .dv-points { display: flex; flex-direction: column; gap: 10px; }
+    .dv-points li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; color: rgba(255,255,255,0.8);
+    }
+    .dv-points li::before { content: '→'; color: var(--gold-light); font-weight: 700; }
+
+    /* ===== ABOUT ===== */
+    #about { background: var(--white); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+    .about-visual {
+      background: linear-gradient(145deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: var(--radius-lg); padding: 48px 36px;
+      color: var(--white); position: relative; overflow: hidden;
+    }
+    .about-visual::after {
+      content: ''; position: absolute; top: -40px; right: -40px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: rgba(224,106,27,0.12);
+    }
+    .av-stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+      position: relative; z-index: 1;
+    }
+    .av-stat {
+      background: rgba(255,255,255,0.1); border-radius: 12px; padding: 20px 16px;
+      text-align: center; border: 1px solid rgba(255,255,255,0.15);
+    }
+    .av-stat .stat-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--gold-light); }
+    .av-stat .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
+    .about-content {}
+    .about-title {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--navy); line-height: 1.2; margin-bottom: 20px;
+    }
+    .about-text { font-size: 0.97rem; color: var(--text-soft); line-height: 1.8; margin-bottom: 16px; }
+    .about-pillars {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px;
+    }
+    .pillar {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: var(--sand); border-radius: 10px; padding: 14px 16px;
+    }
+    .pillar-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .pillar-text .pt-title { font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+    .pillar-text .pt-desc { font-size: 0.8rem; color: var(--text-soft); margin-top: 2px; }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--sand); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+    }
+    .contact-info {}
+    .contact-title {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--navy); line-height: 1.2; margin-bottom: 16px;
+    }
+    .contact-desc { font-size: 0.97rem; color: var(--text-soft); line-height: 1.75; margin-bottom: 32px; }
+    .contact-items { display: flex; flex-direction: column; gap: 18px; }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 18px 20px; background: var(--white);
+      border-radius: var(--radius); border: 1px solid var(--border);
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .contact-item > div:not(.ci-icon) { min-width: 0; flex: 1; }
+    .contact-item:hover { box-shadow: var(--shadow-sm); transform: translateX(4px); }
+    .ci-value { font-size: 0.97rem; font-weight: 600; color: var(--navy); margin-top: 2px; overflow-wrap: break-word; word-break: break-word; min-width: 0; }
+    .ci-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0; color: white;
+    }
+    .ci-label { font-size: 0.75rem; font-weight: 700; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .ci-value a { color: var(--navy); transition: color var(--transition); }
+    .ci-value a:hover { color: var(--navy-light); }
+    .contact-cta-box {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      border-radius: var(--radius-lg); padding: 36px;
+      color: var(--white); display: flex; flex-direction: column; gap: 20px;
+    }
+    .ccb-title {
+      font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+      color: var(--white);
+    }
+    .ccb-desc { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.7; }
+    .ccb-hours { margin-top: 8px; }
+    .ccb-hours h4 { font-size: 0.85rem; font-weight: 700; color: var(--gold-light); margin-bottom: 10px; }
+    .hours-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.88rem; color: rgba(255,255,255,0.8); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .btn-call-lg {
+      display: inline-flex; align-items: center; gap: 10px; justify-content: center;
+      background: var(--gold); color: var(--navy);
+      padding: 16px 28px; border-radius: 10px;
+      font-weight: 700; font-size: 1rem; margin-top: 8px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn-call-lg:hover {
+      background: var(--gold-light); transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(224,106,27,0.4);
+    }
+
+    /* ===== FAQ ===== */
+    #faq { background: var(--white); }
+    .faq-grid { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition);
+    }
+    .faq-item:hover { box-shadow: var(--shadow-md); }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      width: 100%; padding: 20px 24px; background: none; border: none; cursor: pointer;
+      text-align: left; font-family: var(--font-body); font-size: 0.97rem; font-weight: 600;
+      color: var(--navy);
+      transition: color var(--transition);
+    }
+    .faq-q:hover { color: var(--navy-light); }
+    .faq-q .faq-chevron {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--sand); display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; flex-shrink: 0; color: var(--navy);
+      transition: background var(--transition), transform var(--transition);
+    }
+    .faq-item.open .faq-chevron {
+      background: var(--navy); color: var(--white); transform: rotate(180deg);
+    }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s;
+    }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a p { padding: 0 24px 20px; font-size: 0.93rem; color: var(--text-soft); line-height: 1.75; }
+
+    /* ===== REVIEWS ===== */
+    #reviews { background: var(--sand); }
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .review-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 28px; border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .rc-stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .rc-text { font-size: 0.93rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
+    .rc-author { display: flex; align-items: center; gap: 12px; }
+    .rc-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 700; color: var(--white);
+      flex-shrink: 0;
+    }
+    .rc-name { font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+    .rc-meta { font-size: 0.78rem; color: var(--text-soft); margin-top: 2px; }
+
+    .hidden-review {
+      display: none !important;
+    }
+    .hidden-review.show {
+      display: block !important;
+    }
+
+    .btn-outline-dark {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid var(--navy); color: var(--navy);
+      padding: 13px 28px; border-radius: 10px;
+      font-weight: 600; font-size: 0.95rem; background: transparent;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: border-color var(--transition), background var(--transition), color var(--transition), transform var(--transition);
+    }
+    .btn-outline-dark:hover {
+      background: var(--navy); color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .reviews-trust {
+      display: flex; align-items: center; justify-content: center; gap: 40px;
+      margin-top: 56px; padding: 32px;
+      background: var(--white); border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .trust-item { text-align: center; }
+    .trust-num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--navy); }
+    .trust-label { font-size: 0.82rem; color: var(--text-soft); margin-top: 4px; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.75);
+      padding: 60px 0 0;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px;
+      padding-bottom: 40px;
+    }
+    /* Map strip */
+    .footer-map {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 0 36px;
+    }
+    .footer-map-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .footer-map iframe {
+      width: 100%; height: 240px; border: 0;
+      border-radius: var(--radius); display: block;
+      filter: grayscale(20%) contrast(1.05);
+      transition: filter var(--transition);
+    }
+    .footer-map iframe:hover { filter: grayscale(0%) contrast(1); }
+    .footer-brand .fb-logo {
+      font-family: var(--font-display); font-size: 1.2rem;
+      color: var(--white); font-weight: 800; margin-bottom: 12px;
+    }
+    .footer-brand .fb-desc {
+      font-size: 0.88rem; line-height: 1.75; max-width: 300px;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-brand .fb-phone {
+      display: inline-flex; align-items: center; gap: 8px; margin-top: 16px;
+      background: var(--gold); color: var(--navy);
+      padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 0.95rem;
+      transition: background var(--transition);
+    }
+    .footer-brand .fb-phone:hover { background: var(--gold-light); }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a {
+      font-size: 0.88rem; color: rgba(255,255,255,0.6);
+      transition: color var(--transition);
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+
+    /* ===== PROCESS BAND ===== */
+    .process-band { background: var(--navy); padding: 64px 0; }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .ps-item { text-align: center; color: var(--white); }
+    .ps-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(224,106,27,0.2); border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--gold);
+      margin: 0 auto 14px;
+    }
+    .ps-title { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .ps-desc { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+    /* ===== WHY US BAND ===== */
+    .why-band { background: var(--white); padding: 80px 0; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .why-card {
+      border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;
+      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+    .why-card:hover {
+      transform: translateY(-4px); border-color: var(--gold);
+      box-shadow: var(--shadow-sm);
+    }
+    .wc-icon { font-size: 2rem; margin-bottom: 14px; }
+    .wc-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .wc-desc { font-size: 0.88rem; color: var(--text-soft); line-height: 1.7; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-nav { display: block; }
+      .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 100px; }
+      .hero-cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid { grid-template-columns: 1fr; }
+      .detail-grid { grid-template-columns: 1fr; gap: 36px; }
+      .detail-grid.reverse { direction: ltr; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      .contact-item:hover { transform: none; }
+      .contact-cta-box { padding: 24px; }
+      .btn-call-lg { width: 100%; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      .reviews-trust { flex-direction: column; gap: 20px; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .about-pillars { grid-template-columns: 1fr; }
+      .float-cta { bottom: 16px; right: 16px; }
+      .footer-map iframe { height: 200px; }
+    }
+    @media (max-width: 480px) {
+      .hero-cards-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions a { text-align: center; justify-content: center; }
+      .contact-cta-box { padding: 20px; }
+      .contact-item { padding: 14px 16px; gap: 12px; }
+      .ci-icon { width: 38px; height: 38px; font-size: 1rem; flex-shrink: 0; }
+      .ci-value { font-size: 0.9rem; }
+      .ccb-title { font-size: 1.25rem; }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+    .fade-up:nth-child(4) { transition-delay: 0.3s; }
+    .fade-up:nth-child(5) { transition-delay: 0.4s; }
+    .fade-up:nth-child(6) { transition-delay: 0.5s; }
+
+    /* ===== DIVIDERS ===== */
+    .wave-divider { line-height: 0; }
+    .wave-divider svg { display: block; width: 100%; }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Car Key Replacement Jacksonville Beach - Home">
+      <img src="assets/images/logo.png" alt="Car Key Replacement Jacksonville Beach Logo" class="logo-img" />
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li>
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="services-btn">
+          Services <span class="dropdown-icon" aria-hidden="true">▾</span>
+        </button>
+        <ul class="dropdown" role="list" aria-labelledby="services-btn">
+          <li><a href="#services">All Services</a></li>
+          <li><a href="#svc-ignition">Ignition Repair & Replacement</a></li>
+          <li><a href="#svc-fob">Key Fob & Push-to-Start</a></li>
+          <li><a href="#svc-broken">Broken Key Extraction</a></li>
+          <li><a href="#svc-damaged">Key Copy & Spare Keys</a></li>
+          <li><a href="#svc-lost">Lost Key Replacement</a></li>
+        </ul>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="tel:9049381221" class="nav-cta">📞 904-938-1221</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li>
+      <button class="mobile-section-toggle">Services ▾</button>
+      <ul class="mobile-sub">
+        <li><a href="#services">All Services</a></li>
+        <li><a href="#svc-ignition">Ignition Repair</a></li>
+        <li><a href="#svc-fob">Key Fob & Push-to-Start</a></li>
+        <li><a href="#svc-broken">Broken Key Extraction</a></li>
+        <li><a href="#svc-damaged">Key Copy & Spare Keys</a></li>
+        <li><a href="#svc-lost">Lost Key Replacement</a></li>
+      </ul>
+    </li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="tel:9049381221" class="mobile-cta">📞 Call Now: 904-938-1221</a></li>
+  </ul>
+</div>
+
+<!-- ===== FLOATING CTA ===== -->
+<div class="float-cta" aria-label="Quick contact">
+  <a href="tel:9049381221" class="fcta-call" aria-label="Call us now">
+    <span class="float-icon">📞</span>
+    <span>Call Now</span>
+  </a>
+</div>
+
+<main id="main-content">
+
+  <!-- ===== HERO ===== -->
+  <section id="home" aria-labelledby="hero-heading">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="dot" aria-hidden="true"></span> Mobile Service Available Now</div>
+        <h1 class="hero-title" id="hero-heading">
+          Car Key Replacement
+          <span class="accent">Jacksonville Beach</span>
+        </h1>
+        <p class="hero-desc">Fast, professional, and fully mobile car key service. We come directly to your location with advanced equipment for cutting keys, programming remotes, and solving key problems on-site.</p>
+        <div class="hero-actions">
+          <a href="tel:9049381221" class="btn-primary">📞 Call 904-938-1221</a>
+          <a href="#services" class="btn-outline">View All Services</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="hero-cards-grid">
+          <div class="hcard">
+            <div class="hc-icon" aria-hidden="true">🔑</div>
+            <div class="hc-title">Lost Key Replacement</div>
+            <div class="hc-text">Smart keys, transponder keys, push-to-start systems</div>
+          </div>
+          <div class="hcard">
+            <div class="hc-icon" aria-hidden="true">📡</div>
+            <div class="hc-title">Key Fob Programming</div>
+            <div class="hc-text">Remotes, push-to-start, proximity key setup</div>
+          </div>
+          <div class="hcard">
+            <div class="hc-icon" aria-hidden="true">⚙️</div>
+            <div class="hc-title">Ignition Repair</div>
+            <div class="hc-text">Stuck keys, worn cylinders, broken ignitions</div>
+          </div>
+          <div class="hcard">
+            <div class="hc-icon" aria-hidden="true">🚐</div>
+            <div class="hc-title">Mobile Service</div>
+            <div class="hc-text">We come directly to you — no towing required</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f5efe6"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS BAND ===== -->
+  <div class="process-band" aria-label="How it works">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:40px;">
+        <span class="section-label" style="color:var(--gold-light)">How It Works</span>
+        <h2 class="section-title" style="color:var(--white)">Simple, Fast, Professional</h2>
+      </div>
+      <div class="process-steps">
+        <div class="ps-item fade-up">
+          <div class="ps-num">1</div>
+          <div class="ps-title">Call Us</div>
+          <div class="ps-desc">Reach our team at 904-938-1221 and describe your key or ignition issue</div>
+        </div>
+        <div class="ps-item fade-up">
+          <div class="ps-num">2</div>
+          <div class="ps-title">We Dispatch</div>
+          <div class="ps-desc">A mobile technician is dispatched to your location with professional equipment</div>
+        </div>
+        <div class="ps-item fade-up">
+          <div class="ps-num">3</div>
+          <div class="ps-title">On-Site Service</div>
+          <div class="ps-desc">Keys cut and programmed, ignitions repaired — all at your location</div>
+        </div>
+        <div class="ps-item fade-up">
+          <div class="ps-num">4</div>
+          <div class="ps-title">Back on the Road</div>
+          <div class="ps-desc">Most jobs completed in 30–60 minutes. No towing, no dealership wait</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section id="services" class="section-pad" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title" id="services-heading">Complete Mobile Car Key Solutions</h2>
+        <p class="section-desc">Car Key Replacement Jacksonville Beach provides mobile key replacement and programming services throughout Jacksonville Beach and nearby areas.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">🔑</div>
+          <h3 class="sc-title">Car Key Replacement</h3>
+          <p class="sc-desc">Modern vehicle keys require more than simple duplication. Many cars use advanced anti-theft systems that require electronic programming before the vehicle will recognize the replacement key.</p>
+          <ul class="sc-list" aria-label="Key replacement services">
+            <li>Lost car key replacement</li>
+            <li>Smart key replacement</li>
+            <li>Push-to-start keys</li>
+            <li>Spare car keys</li>
+            <li>Transponder key programming</li>
+            <li>Remote key fob replacement</li>
+          </ul>
+          <a href="#svc-lost" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">⚙️</div>
+          <h3 class="sc-title">Ignition Repair & Replacement</h3>
+          <p class="sc-desc">If your key will not turn, becomes stuck in the ignition, or the vehicle suddenly refuses to start, the issue may be related to the ignition system rather than the key itself.</p>
+          <ul class="sc-list" aria-label="Ignition services">
+            <li>Key stuck in ignition</li>
+            <li>Key not turning</li>
+            <li>Broken key inside ignition</li>
+            <li>Worn ignition cylinder</li>
+            <li>Ignition switch problems</li>
+            <li>Full ignition replacement</li>
+          </ul>
+          <a href="#svc-ignition" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">📡</div>
+          <h3 class="sc-title">Key Fob & Push-to-Start</h3>
+          <p class="sc-desc">Many vehicles today rely heavily on remote systems for locking, unlocking, and starting the vehicle. When a key fob stops working, the issue may involve programming or internal damage.</p>
+          <ul class="sc-list" aria-label="Key fob services">
+            <li>Key fob replacement</li>
+            <li>Remote programming</li>
+            <li>Battery replacement</li>
+            <li>Remote synchronization</li>
+            <li>Signal testing</li>
+            <li>Push-to-start setup</li>
+          </ul>
+          <a href="#svc-fob" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">🔧</div>
+          <h3 class="sc-title">Broken Key Extraction</h3>
+          <p class="sc-desc">A broken key inside the ignition can happen suddenly. Trying to remove the broken piece without proper tools may damage the ignition cylinder and create a more expensive repair.</p>
+          <ul class="sc-list" aria-label="Broken key services">
+            <li>Safe broken key extraction</li>
+            <li>Ignition inspection</li>
+            <li>Replacement key cutting</li>
+            <li>Key duplication</li>
+            <li>Ignition testing after removal</li>
+          </ul>
+          <a href="#svc-broken" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">✂️</div>
+          <h3 class="sc-title">Key Copy & Spare Keys</h3>
+          <p class="sc-desc">Car keys and remotes go through constant daily use. Damaged remotes, worn keys, and cracked smart keys can make it difficult to access your vehicle properly.</p>
+          <ul class="sc-list" aria-label="Key copy services">
+            <li>Duplicate car keys</li>
+            <li>Spare transponder keys</li>
+            <li>Smart key copies</li>
+            <li>Laser cut key duplication</li>
+            <li>Broken remote replacement</li>
+            <li>Shell replacement</li>
+          </ul>
+          <a href="#svc-damaged" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="sc-icon" aria-hidden="true">🚐</div>
+          <h3 class="sc-title">Mobile Service Benefits</h3>
+          <p class="sc-desc">Our service is fully mobile, allowing us to complete most jobs directly where your vehicle is located. Instead of arranging towing or waiting at a dealership, we bring professional solutions to you.</p>
+          <ul class="sc-list" aria-label="Mobile service benefits">
+            <li>No towing required</li>
+            <li>Service at your location</li>
+            <li>Faster turnaround times</li>
+            <li>On-site key programming</li>
+            <li>Convenient scheduling</li>
+          </ul>
+          <a href="#contact" class="sc-link">Contact us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE DETAIL: IGNITION ===== -->
+  <div id="svc-ignition" class="service-detail">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-content">
+          <span class="detail-label">Ignition Services</span>
+          <h2 class="detail-title">Ignition Repair & Ignition Replacement in Jacksonville Beach</h2>
+          <p class="detail-desc">If your key will not turn, becomes stuck in the ignition, or the vehicle suddenly refuses to start, the issue may be related to the ignition system rather than the key itself. Ignition components wear over time and can fail unexpectedly, creating frustrating and inconvenient situations for drivers.</p>
+          <p class="detail-desc">Car Key Replacement Jacksonville Beach provides mobile ignition repair and ignition replacement services designed to restore proper vehicle operation quickly and professionally. Our technicians come directly to your location with the tools needed to diagnose and repair many ignition problems on-site.</p>
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;">Common Ignition Problems We Solve:</h3>
+          <ul class="detail-list" aria-label="Common ignition problems">
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Key stuck in ignition</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Key not turning or difficult to rotate</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Broken key inside ignition</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Worn ignition cylinder</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Vehicle not starting</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Ignition switch problems</li>
+          </ul>
+        </div>
+        <div class="detail-visual">
+          <span class="dv-emoji" aria-hidden="true">⚙️</span>
+          <div class="dv-title">Ignition Replacement Process</div>
+          <ul class="dv-points" aria-label="Replacement process steps">
+            <li>Ignition cylinder condition inspection</li>
+            <li>Internal lock component check</li>
+            <li>Steering lock interference diagnosis</li>
+            <li>Removing faulty ignition unit</li>
+            <li>Installing new ignition cylinder</li>
+            <li>Matching keys when possible</li>
+            <li>Full operation testing</li>
+            <li>Programming newer systems if required</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICE DETAIL: KEY FOB ===== -->
+  <div id="svc-fob" class="service-detail">
+    <div class="container">
+      <div class="detail-grid reverse">
+        <div class="detail-visual">
+          <span class="dv-emoji" aria-hidden="true">📡</span>
+          <div class="dv-title">Common Key Fob Problems</div>
+          <ul class="dv-points" aria-label="Key fob problems">
+            <li>Vehicle not detecting key</li>
+            <li>Weak remote signal</li>
+            <li>Broken or cracked key shell</li>
+            <li>Push button start failure</li>
+            <li>Remote not unlocking doors</li>
+            <li>Water-damaged remotes</li>
+          </ul>
+        </div>
+        <div class="detail-content">
+          <span class="detail-label">Smart Key Services</span>
+          <h2 class="detail-title">Key Fob Replacement & Push-to-Start Service in Jacksonville Beach</h2>
+          <p class="detail-desc">Modern vehicles rely heavily on smart key technology and remote systems for daily operation. If your key fob stops working, becomes damaged, or your push-to-start system no longer detects the key, it can quickly prevent you from accessing or starting your vehicle.</p>
+          <p class="detail-desc">Car Key Replacement Jacksonville Beach provides professional key fob replacement and push-to-start programming services designed for modern vehicle systems. Our mobile technicians arrive directly to your location with advanced programming equipment.</p>
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;">Push-to-Start & Smart Key Services:</h3>
+          <ul class="detail-list" aria-label="Smart key services">
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Smart key replacement</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Push-to-start key programming</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Proximity key setup</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Key not detected problems</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Lost smart key replacement</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Spare smart key creation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICE DETAIL: BROKEN KEY ===== -->
+  <div id="svc-broken" class="service-detail">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-content">
+          <span class="detail-label">Emergency Service</span>
+          <h2 class="detail-title">Key Broke in the Ignition in Jacksonville Beach</h2>
+          <p class="detail-desc">A broken key inside the ignition can happen suddenly and leave you unable to start or move your vehicle. Over time, car keys become worn from daily use, and weakened metal can eventually snap while turning the ignition.</p>
+          <p class="detail-desc">When this happens, trying to remove the broken piece without the proper tools may damage the ignition cylinder and create a more expensive repair. Car Key Replacement Jacksonville Beach provides broken key extraction and ignition assistance using professional tools designed to safely remove broken key pieces.</p>
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;">Common Reasons Keys Break in the Ignition:</h3>
+          <ul class="detail-list" aria-label="Causes of key breakage">
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Worn or weakened keys</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Damaged ignition cylinders</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Bent keys</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Excessive force while turning</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Dirt or debris inside ignition</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Steering wheel lock pressure</li>
+          </ul>
+        </div>
+        <div class="detail-visual">
+          <span class="dv-emoji" aria-hidden="true">🔧</span>
+          <div class="dv-title">Broken Key Extraction Service</div>
+          <ul class="dv-points" aria-label="Extraction service steps">
+            <li>Safe broken key extraction</li>
+            <li>Ignition inspection & diagnosis</li>
+            <li>Replacement key cutting</li>
+            <li>Key duplication on-site</li>
+            <li>Ignition testing after removal</li>
+            <li>Worn ignition cylinder repair</li>
+            <li>Ignition replacement if needed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICE DETAIL: DAMAGED / COPY ===== -->
+  <div id="svc-damaged" class="service-detail">
+    <div class="container">
+      <div class="detail-grid reverse">
+        <div class="detail-visual">
+          <span class="dv-emoji" aria-hidden="true">✂️</span>
+          <div class="dv-title">Key Copy & Spare Key Services</div>
+          <ul class="dv-points" aria-label="Key copy services">
+            <li>Duplicate car keys</li>
+            <li>Spare transponder keys</li>
+            <li>Smart key copies</li>
+            <li>Laser cut key duplication</li>
+            <li>Backup remote keys</li>
+            <li>Broken remote replacement</li>
+            <li>Key shell replacement</li>
+          </ul>
+        </div>
+        <div class="detail-content">
+          <span class="detail-label">Key Copy & Damage Services</span>
+          <h2 class="detail-title">Car Key Damage, Broken Remote & Key Copy Service in Jacksonville Beach</h2>
+          <p class="detail-desc">Car keys and remotes go through constant daily use, which means damage can happen over time. Keys may crack, bend, stop responding, or completely fail without warning. A damaged remote or worn key can make it difficult to unlock, start, or access your vehicle properly.</p>
+          <p class="detail-desc">Having a spare car key can help prevent emergencies and reduce stress if the original key becomes damaged or lost. Creating a spare key while you still have a working original is usually faster and easier than replacing all lost keys later.</p>
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;">Common Car Key Problems:</h3>
+          <ul class="detail-list" aria-label="Common key problems">
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Broken key fobs & cracked smart keys</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Damaged transponder chips</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Buttons not responding</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Bent or worn keys</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Weak remote signal</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Vehicle not detecting the key</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICE DETAIL: LOST KEY ===== -->
+  <div id="svc-lost" class="service-detail">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-content">
+          <span class="detail-label">Lost Key Service</span>
+          <h2 class="detail-title">Lost Car Key Replacement in Jacksonville Beach</h2>
+          <p class="detail-desc">Losing your car key can quickly turn into a stressful situation, especially when you are away from home, parked at the beach, heading to work, or dealing with a busy schedule. Many drivers panic after losing their only key because they assume the vehicle must be towed to a dealership before a replacement can be made.</p>
+          <p class="detail-desc">In many cases, that is not necessary. Car Key Replacement Jacksonville Beach provides mobile lost car key replacement services designed to help drivers regain access to their vehicles quickly and professionally. Our technicians arrive with advanced key cutting and programming equipment that allows many replacement keys to be created directly on-site.</p>
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;">What Happens When All Keys Are Lost:</h3>
+          <ul class="detail-list" aria-label="Lost key process">
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Vehicle key code lookup</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Key blade cutting</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Transponder chip programming</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Smart key setup</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Remote synchronization</li>
+            <li><span class="dl-icon" aria-hidden="true">✓</span>Testing ignition and remote functions</li>
+          </ul>
+        </div>
+        <div class="detail-visual">
+          <span class="dv-emoji" aria-hidden="true">🔑</span>
+          <div class="dv-title">Lost Key Security</div>
+          <p style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:20px;">If your lost key was stolen or lost in an unknown location, security may become a concern. In many cases, old keys can be removed from the vehicle memory so they no longer start the car. This can help improve security and provide peace of mind after losing a key.</p>
+          <ul class="dv-points" aria-label="Lost key situations we handle">
+            <li>Lost keys at the beach</li>
+            <li>Keys missing at work</li>
+            <li>Keys locked inside vehicles</li>
+            <li>Damaged or non-working spare keys</li>
+            <li>Emergency vehicle access problems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <div class="why-band">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">Why Choose Car Key Replacement Jacksonville Beach</h2>
+        <p class="section-desc">Drivers choose our service because we focus on reliable solutions and professional mobile service throughout Jacksonville Beach and nearby areas.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">⚡</div>
+          <h3 class="wc-title">Fast Local Response</h3>
+          <p class="wc-desc">Car key problems rarely happen at convenient times. Our mobile service is designed to respond quickly and provide efficient on-site solutions wherever your vehicle is located.</p>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">🚐</div>
+          <h3 class="wc-title">Mobile Convenience</h3>
+          <p class="wc-desc">We come directly to your location — home, work, parking lot, or roadside — so you don't need to arrange towing or wait at a dealership for an appointment.</p>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">💻</div>
+          <h3 class="wc-title">Modern Programming Equipment</h3>
+          <p class="wc-desc">Our technicians use advanced equipment for cutting keys, programming remotes, and diagnosing vehicle key problems with experience across many makes and models.</p>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">🔒</div>
+          <h3 class="wc-title">Vehicle Security Focused</h3>
+          <p class="wc-desc">We understand modern anti-theft and immobilizer systems, ensuring replacement keys communicate properly with your vehicle's security system for safe, reliable access.</p>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">🏖️</div>
+          <h3 class="wc-title">Local Jacksonville Beach Service</h3>
+          <p class="wc-desc">We're local to Jacksonville Beach and nearby surrounding areas, making it easy to get fast professional service when and where you need it most.</p>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon" aria-hidden="true">✅</div>
+          <h3 class="wc-title">Professional On-Site Solutions</h3>
+          <p class="wc-desc">Most car key replacement services take between 30–60 minutes depending on the vehicle type and key system — completed professionally at your location.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-pad" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="av-stat-grid">
+            <div class="av-stat">
+              <div class="stat-num">30–60</div>
+              <div class="stat-label">Minutes avg. job time</div>
+            </div>
+            <div class="av-stat">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Mobile service</div>
+            </div>
+            <div class="av-stat">
+              <div class="stat-num">Many</div>
+              <div class="stat-label">Makes & models served</div>
+            </div>
+            <div class="av-stat">
+              <div class="stat-num">0</div>
+              <div class="stat-label">Towing trips needed</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-label">About Us</span>
+          <h2 class="about-title" id="about-heading">Local Automotive Key Specialists in Jacksonville Beach</h2>
+          <p class="about-text">Car Key Replacement Jacksonville Beach provides mobile key replacement and programming services for drivers throughout Jacksonville Beach and nearby areas. Our technicians arrive directly to your location with advanced equipment for cutting keys, programming remotes, and diagnosing vehicle key problems on-site.</p>
+          <p class="about-text">When you need car key replacement in Jacksonville Beach, working with a local mobile specialist can make the process much easier. Whether your key is lost, broken, or no longer detected by the vehicle, Car Key Replacement Jacksonville Beach provides professional mobile service designed to get you back on the road quickly and safely.</p>
+          <div class="about-pillars" aria-label="Our key strengths">
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">⚡</span>
+              <div class="pillar-text">
+                <div class="pt-title">Fast Response</div>
+                <div class="pt-desc">We dispatch quickly to your location</div>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">🔑</span>
+              <div class="pillar-text">
+                <div class="pt-title">Modern Keys</div>
+                <div class="pt-desc">Smart keys, transponders, push-to-start</div>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">🛡️</span>
+              <div class="pillar-text">
+                <div class="pt-title">Security Aware</div>
+                <div class="pt-desc">Key deletion & vehicle memory management</div>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">📍</span>
+              <div class="pillar-text">
+                <div class="pt-title">Truly Local</div>
+                <div class="pt-desc">Serving Jacksonville Beach & nearby areas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-pad" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="contact-title" id="contact-heading">Contact Car Key Replacement Jacksonville Beach</h2>
+          <p class="contact-desc">When you need car key replacement in Jacksonville Beach, our local mobile specialists are ready to help. Give us a call and we'll dispatch a technician directly to your location.</p>
+          <div class="contact-items" aria-label="Contact information">
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="ci-label">Phone Number</div>
+                <div class="ci-value"><a href="tel:9049381221">904-938-1221</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="ci-label">Business Address</div>
+                <div class="ci-value">1244 Beach Blvd, Unit 1876/C<br>Jacksonville Beach, FL 32250</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">🌐</div>
+              <div>
+                <div class="ci-label">Website</div>
+                <div class="ci-value"><a href="https://carkeyreplacement jacksonvillebeach.com" target="_blank" rel="noopener">CarKeyReplacementJacksonvilleBeach.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="ci-label">Service Area</div>
+                <div class="ci-value">Jacksonville Beach & surrounding areas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-cta-box">
+            <h3 class="ccb-title">Ready to Help You Right Now</h3>
+            <p class="ccb-desc">Car key problems rarely happen at convenient times. Whether you lost your only key, your ignition will not recognize the key, or your remote stopped working, our mobile service is designed to respond quickly and provide efficient solutions.</p>
+            <div class="ccb-hours" aria-label="Service hours">
+              <h4>Service Availability</h4>
+              <div class="hours-row"><span>Monday – Friday</span><span>Available</span></div>
+              <div class="hours-row"><span>Saturday</span><span>Available</span></div>
+              <div class="hours-row"><span>Sunday</span><span>Available</span></div>
+            </div>
+            <a href="tel:9049381221" class="btn-call-lg" aria-label="Call 904-938-1221">
+              📞 Call 904-938-1221
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section-pad" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+        <p class="section-desc">Common questions about car key replacement in Jacksonville Beach. Don't see your question? Give us a call at 904-938-1221.</p>
+      </div>
+      <div class="faq-grid" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Can you replace my car key if I lost the only one?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Yes. We provide lost car key replacement in Jacksonville Beach for many vehicle makes and models, including smart keys, transponder keys, and push-to-start systems.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Do I need to tow my vehicle to replace a key?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>In many cases, no. Our mobile car key service comes directly to your location with professional cutting and programming equipment, allowing most jobs to be completed on-site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            How long does car key replacement take?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Most car key replacement services take between 30–60 minutes depending on the vehicle type and key system.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Can you program push-to-start smart keys?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Yes. We provide smart key programming and push-to-start key replacement for many modern vehicles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            What if my vehicle says "key not detected"?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>This may be caused by a weak battery, damaged smart key, or programming issue. We can diagnose the problem and provide the correct solution for your specific vehicle.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Do you replace broken key fobs?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Yes. We replace damaged remotes, cracked smart keys, and non-working key fobs for many vehicles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Can you make a spare car key?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Yes. Creating a spare key while you still have a working original is usually faster and more convenient than replacing all lost keys later. We provide duplicate keys, spare transponder keys, and smart key copies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            What is a transponder key?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>A transponder key contains an electronic chip that communicates with the vehicle's immobilizer system. Without proper programming, the vehicle may not start even if the key blade is cut correctly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Can you repair or replace ignitions?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Yes. We provide ignition repair and ignition replacement services for keys that get stuck, ignitions that will not turn, and worn ignition cylinders.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            What should I do if my key broke inside the ignition?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>Do not try to force the broken piece out. Attempting removal without proper tools may damage the ignition. We provide broken key extraction services in Jacksonville Beach using professional tools designed for safe removal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            Can you program a key purchased online?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>In many cases yes, as long as the key is compatible with your vehicle's system and frequency. We can assess compatibility and handle the programming process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false">
+            What areas do you service?
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p>We provide mobile car key replacement and automotive locksmith service throughout Jacksonville Beach and nearby surrounding areas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" class="section-pad" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Customer Reviews</span>
+        <h2 class="section-title" id="reviews-heading">What Drivers Are Saying</h2>
+        <p class="section-desc">Jacksonville Beach drivers trust Car Key Replacement Jacksonville Beach for fast, reliable mobile key service.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">I lost my only key at the beach and panicked thinking I'd need a tow. Called these guys and they came right to the parking lot. Had a new key programmed in under an hour. Saved my day completely!</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">S</div>
+            <div>
+              <div class="rc-name">Sarah M.</div>
+              <div class="rc-meta">Jacksonville Beach • Lost Key Replacement</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">My push-to-start stopped working and the dealer wanted 3 days and a fortune. Called Car Key Replacement Jacksonville Beach and they were at my workplace within the hour. Problem solved fast.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">D</div>
+            <div>
+              <div class="rc-name">Derek T.</div>
+              <div class="rc-meta">Neptune Beach • Push-to-Start Service</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Key snapped in the ignition on a Monday morning. These guys came out, extracted the broken piece, and cut me a new key right there in my driveway. Professional and efficient.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">L</div>
+            <div>
+              <div class="rc-name">Linda R.</div>
+              <div class="rc-meta">Jacksonville Beach • Broken Key Extraction</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Needed a spare key made for my wife's car. They came right to our house, programmed a transponder key that works perfectly. Really convenient not having to go anywhere.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">M</div>
+            <div>
+              <div class="rc-name">Mike H.</div>
+              <div class="rc-meta">Atlantic Beach • Spare Key Programming</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">My key fob completely died and the car wouldn't detect it at all. They diagnosed the issue, got a replacement programmed, and had me back on the road in no time. Great service!</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">J</div>
+            <div>
+              <div class="rc-name">Jessica P.</div>
+              <div class="rc-meta">Jacksonville Beach • Key Fob Replacement</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Had ignition issues — key was hard to turn and sometimes got stuck. They came out, diagnosed the worn cylinder, and replaced it on the spot. Smooth as new. Highly recommend.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">C</div>
+            <div>
+              <div class="rc-name">Carlos V.</div>
+              <div class="rc-meta">Ponte Vedra Beach • Ignition Replacement</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra hidden reviews -->
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Lost my only car key while walking near Jacksonville Beach and thought I would need to tow the car. They arrived quickly, programmed a new key on-site, and had everything working the same afternoon. Very smooth experience.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">D</div>
+            <div>
+              <div class="rc-name">David Reynolds</div>
+              <div class="rc-meta">Jacksonville Beach • Lost Key Replacement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">My push-to-start key suddenly stopped being detected by the vehicle. They diagnosed the issue fast, programmed a replacement smart key, and made sure every function worked before leaving. Professional and honest service.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">B</div>
+            <div>
+              <div class="rc-name">Brian Mitchell</div>
+              <div class="rc-meta">Jacksonville Beach • Smart Key Service</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Needed a spare transponder key for my Honda. They came directly to my office parking lot in Jacksonville Beach and finished the key cutting and programming much faster than I expected.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">C</div>
+            <div>
+              <div class="rc-name">Carlos Ramirez</div>
+              <div class="rc-meta">Jacksonville Beach • Honda Spare Key</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Excellent mobile locksmith service. My key fob stopped unlocking the doors and the remote completely failed. They replaced the remote, synced everything correctly, and now it works perfectly again.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">E</div>
+            <div>
+              <div class="rc-name">Ethan Walker</div>
+              <div class="rc-meta">Jacksonville Beach • Key Fob Service</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">I broke my key inside the ignition late in the evening and thought the ignition was ruined. They carefully removed the broken piece, checked the ignition, and made me a new key during the same visit.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">J</div>
+            <div>
+              <div class="rc-name">Justin Parker</div>
+              <div class="rc-meta">Jacksonville Beach • Ignition Key Extraction</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Very reliable service. I lost my smart key at the beach and they were able to create and program a replacement key without towing the vehicle anywhere. Fast response and great communication.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">M</div>
+            <div>
+              <div class="rc-name">Matthew Collins</div>
+              <div class="rc-meta">Jacksonville Beach • Smart Key Replacement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hidden-review fade-up">
+          <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          <p class="rc-text">Called for emergency car key replacement after my remote stopped working completely. They showed up with professional equipment, explained the issue clearly, and got me back on the road quickly. Highly recommend this company.</p>
+          <div class="rc-author">
+            <div class="rc-avatar" aria-hidden="true">R</div>
+            <div>
+              <div class="rc-name">Ryan Foster</div>
+              <div class="rc-meta">Jacksonville Beach • Emergency Key Service</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reviews-actions" style="text-align: center; margin-top: 40px;">
+        <button id="btn-more-reviews" class="btn-outline-dark" aria-expanded="false">
+          <span>View More Reviews</span>
+          <span class="chevron-icon" aria-hidden="true" style="display: inline-block; transition: transform var(--transition);">▾</span>
+        </button>
+      </div>
+
+      <div class="reviews-trust" aria-label="Trust statistics">
+        <div class="trust-item">
+          <div class="trust-num">5★</div>
+          <div class="trust-label">Average Rating</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">30–60</div>
+          <div class="trust-label">Min. avg. completion</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">100%</div>
+          <div class="trust-label">Mobile service</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">0</div>
+          <div class="trust-label">Tows required</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">
+          <img src="assets/images/logo.png" alt="Car Key Replacement Jacksonville Beach Logo" class="logo-img" style="height: 48px; width: auto; object-fit: contain;" />
+        </div>
+        <p class="fb-desc">Professional mobile car key replacement, key programming, ignition repair, and key fob services throughout Jacksonville Beach and nearby areas.</p>
+        <a href="tel:9049381221" class="fb-phone" aria-label="Call 904-938-1221">📞 904-938-1221</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Car Key Replacement</a></li>
+          <li><a href="#svc-ignition">Ignition Repair</a></li>
+          <li><a href="#svc-fob">Key Fob & Push-to-Start</a></li>
+          <li><a href="#svc-broken">Broken Key Extraction</a></li>
+          <li><a href="#svc-damaged">Key Copy & Spare Keys</a></li>
+          <li><a href="#svc-lost">Lost Key Replacement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Contact</h4>
+        <ul>
+          <li><a href="tel:9049381221">904-938-1221</a></li>
+          <li><a href="#contact">1244 Beach Blvd, Unit 1876/C<br>Jacksonville Beach, FL 32250</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-map">
+      <div class="footer-map-label">📍 Find Us</div>
+      <iframe
+        src="https://www.google.com/maps?q=1244+Beach+Blvd+Jacksonville+Beach+FL+32250&output=embed"
+        title="Car Key Replacement Jacksonville Beach location map"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Google map showing our location at 1244 Beach Blvd, Jacksonville Beach, FL 32250"
+      ></iframe>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Car Key Replacement Jacksonville Beach. All rights reserved.</p>
+      <p>Mobile automotive key service throughout Jacksonville Beach, FL</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== NAVBAR SCROLL =====
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // ===== HAMBURGER MENU =====
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // Close mobile nav on link click
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Mobile sub-menu toggle
+  document.querySelectorAll('.mobile-section-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sub = btn.nextElementSibling;
+      if (sub) sub.style.display = sub.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // ===== DESKTOP DROPDOWN =====
+  document.querySelectorAll('.nav-links > li').forEach(item => {
+    const toggle = item.querySelector('.dropdown-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = item.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-links > li.open').forEach(item => {
+      item.classList.remove('open');
+      const toggle = item.querySelector('.dropdown-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ===== FAQ ACCORDION =====
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+  });
+
+  // ===== REVIEWS TOGGLE =====
+  const btnMoreReviews = document.getElementById('btn-more-reviews');
+  const hiddenReviews = document.querySelectorAll('.review-card.hidden-review');
+  if (btnMoreReviews) {
+    btnMoreReviews.addEventListener('click', () => {
+      const isExpanded = btnMoreReviews.getAttribute('aria-expanded') === 'true';
+      btnMoreReviews.setAttribute('aria-expanded', !isExpanded);
+      
+      hiddenReviews.forEach(card => {
+        if (!isExpanded) {
+          card.classList.add('show');
+        } else {
+          card.classList.remove('show');
+          card.classList.remove('visible');
+        }
+      });
+      
+      const btnText = btnMoreReviews.querySelector('span');
+      const btnChevron = btnMoreReviews.querySelector('.chevron-icon');
+      if (!isExpanded) {
+        btnText.textContent = 'View Less Reviews';
+        btnChevron.style.transform = 'rotate(180deg)';
+      } else {
+        btnText.textContent = 'View More Reviews';
+        btnChevron.style.transform = 'rotate(0deg)';
+        document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  // ===== SCROLL ANIMATIONS =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ===== ACTIVE NAV ON SCROLL =====
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+    });
+  }, { passive: true });
+</script>
+</body>
+</html>
